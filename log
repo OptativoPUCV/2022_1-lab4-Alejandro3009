@@ -46,3 +46,9 @@ hashmap.c:54:5: error: expected ';' before 'map'
      ^~~
 Compilation failed
 4e9fccc
+ju.,  7 de abr. de 2022 13:19:38: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+f853ab6
