@@ -36,3 +36,13 @@ hashmap.c:54:5: error: expected ';' before 'map'
      ^~~
 Compilation failed
 41aa668
+ju.,  7 de abr. de 2022 13:19:25: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:54:5: error: expected ';' before 'map'
+     map->size += 1;
+     ^~~
+Compilation failed
+4e9fccc
