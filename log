@@ -20,3 +20,19 @@ ju.,  7 de abr. de 2022 12:51:49:
  tests:  1|5
 total_score: 10/70
 6806987
+ju.,  7 de abr. de 2022 13:18:40: 
+ hashmap.c | 14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:46:42: error: invalid operands to binary - (have 'Pair * {aka struct Pair *}' and 'char *')
+         if(is_equal(key,map->buckets[idx]-key) == 1)return;
+                         ~~~~~~~~~~~~~~~~~^
+hashmap.c:51:9: error: expected ';' before 'map'
+         map->buckets[idx]->value = value
+         ^~~
+hashmap.c:54:5: error: expected ';' before 'map'
+     map->size += 1;
+     ^~~
+Compilation failed
+41aa668
