@@ -302,3 +302,9 @@ do., 10 de abr. de 2022 23:53:31:
  tests:  11|2
 total_score: 50/70
 a87bfc0
+do., 10 de abr. de 2022 23:54:03: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  15|2
+total_score: 60/70
+5f6559b
