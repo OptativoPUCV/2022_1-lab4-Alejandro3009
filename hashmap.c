@@ -81,8 +81,8 @@ void eraseMap(HashMap * map,  char * key) {
         }
         idx = ((idx + 1)%map->capacity);
     }
-    
-    if(esta == 1)return;
+
+    if(esta != 1)return;
     else 
     {
         map->buckets[idx]->key = NULL;
