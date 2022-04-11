@@ -350,3 +350,9 @@ lu., 11 de abr. de 2022  0:16:24:
  tests:  16|1
 total_score: 60/70
 1261624
+lu., 11 de abr. de 2022  0:19:57: 
+ hashmap.c | 17 +++++++++--------
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+ tests:  17|0
+total_score: 70/70
+736a027
