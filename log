@@ -182,3 +182,17 @@ do., 10 de abr. de 2022 22:48:07:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 898562f
+do., 10 de abr. de 2022 22:53:46: 
+ hashmap.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:63:5: error: expected ';' before 'newMap'
+     newMap = createMap(bigC);
+     ^~~~~~
+hashmap.c:61:10: error: unused variable 'bigC' [-Werror=unused-variable]
+     long bigC = map->capacity * 2;
+          ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b91094f
