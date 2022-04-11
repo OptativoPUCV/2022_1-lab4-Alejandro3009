@@ -61,7 +61,6 @@ void enlarge(HashMap * map) {
     long i;
     long idx = 0;
     long bigC = map->capacity * 2;
-    printf("%li",bigC);
     free(map);
     map = createMap(bigC);
     for(i = 0; i<bigC/2; i++){
