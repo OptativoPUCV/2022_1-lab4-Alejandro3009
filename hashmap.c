@@ -81,9 +81,9 @@ Pair * searchMap(HashMap * map,  char * key) {
         if(map->buckets[idx] == NULL)return NULL;
         idx = ((idx + 1)%map->capacity);
     }
-    
+
     map->current = idx;
-    return NULL;
+    return map->buckets[idx];
 }
 
 Pair * firstMap(HashMap * map) {
