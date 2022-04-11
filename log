@@ -89,3 +89,17 @@ do., 10 de abr. de 2022 21:54:38:
  1 file changed, 4 insertions(+), 1 deletion(-)
  tests:  0|0
 5f29da4
+do., 10 de abr. de 2022 21:55:35: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:76:45: error: 'return' with a value, in function returning void [-Werror]
+         if(map->buckets[idx] == NULL)return NULL;
+                                             ^~~~
+hashmap.c:73:6: note: declared here
+ void eraseMap(HashMap * map,  char * key) {
+      ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e2221d1
