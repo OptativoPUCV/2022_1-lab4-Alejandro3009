@@ -63,6 +63,7 @@ void enlarge(HashMap * map) {
     long bigC = map->capacity * 2;
     free(map);
     map = createMap(bigC);
+    printf("%li",map->capacity);
     for(i = 0; i<bigC/2; i++){
         if (oldBuckets[i] != NULL){
             insertMap(map,oldBuckets[i]->key,oldBuckets[i]->value);
