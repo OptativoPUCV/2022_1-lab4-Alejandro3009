@@ -124,3 +124,8 @@ hashmap.c:84:8: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5bab340
+do., 10 de abr. de 2022 21:56:21: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+34361c6
