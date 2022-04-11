@@ -177,3 +177,8 @@ hashmap.c:65:37: error: 'old_buckets' undeclared (first use in this function)
 hashmap.c:65:37: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 540fee5
+do., 10 de abr. de 2022 22:48:07: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+898562f

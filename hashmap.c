@@ -62,7 +62,7 @@ void enlarge(HashMap * map) {
     map->buckets = (Pair**) calloc (bigC,sizeof(Pair *));
     map->size = 0;
     while(oldBuckets[idx] != NULL){
-        if (map->buckets != NULL && old_buckets[idx] != NULL){
+        if (map->buckets != NULL && oldBuckets[idx] != NULL){
             insertMap(map,oldBuckets[idx]->key,oldBuckets[idx]->value);
             idx++;
         }
