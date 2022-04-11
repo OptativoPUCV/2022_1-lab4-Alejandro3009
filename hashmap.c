@@ -55,22 +55,21 @@ void insertMap(HashMap * map, char * key, void * value) {
 }
 
 void enlarge(HashMap * map) {
+    enlarge_called = 1; //no borrar (testing purposes)
+
     Pair **oldBuckets = map->buckets;
-    HashMap *newMap;
+    long i;
     long idx = 0;
     long bigC = map->capacity * 2;
     free(map);
     map = createMap(bigC);
-    map->size = 0;
-    while(oldBuckets[idx] != NULL){
-        if (newMap->buckets != NULL && oldBuckets[idx] != NULL){
-            insertMap(newMap,oldBuckets[idx]->key,oldBuckets[idx]->value);
+    for(i = 0; i<bigC/2; i++){
+        if (map->buckets != NULL && oldBuckets[idx] != NULL){
+            insertMap(map,oldBuckets[idx]->key,oldBuckets[idx]->value);
             idx++;
         }
         else idx++;
     }
-    
-    enlarge_called = 1; //no borrar (testing purposes)
 }
 
 

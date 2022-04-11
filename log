@@ -213,3 +213,9 @@ hashmap.c:66:19: error: 'newMap' may be used uninitialized in this function [-We
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e0e7c6e
+do., 10 de abr. de 2022 22:59:22: 
+ hashmap.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+ tests:  11|2
+total_score: 50/70
+30bdc01
