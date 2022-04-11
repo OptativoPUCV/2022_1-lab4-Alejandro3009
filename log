@@ -62,3 +62,8 @@ do., 10 de abr. de 2022 21:36:09:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 3671ccf
+do., 10 de abr. de 2022 21:39:03: 
+ hashmap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  0|0
+2e95c52
