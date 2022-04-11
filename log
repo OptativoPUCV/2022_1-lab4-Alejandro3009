@@ -243,3 +243,9 @@ do., 10 de abr. de 2022 23:07:03:
  tests:  11|2
 total_score: 50/70
 661734f
+do., 10 de abr. de 2022 23:11:14: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|2
+total_score: 50/70
+ae17942
