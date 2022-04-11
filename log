@@ -202,3 +202,14 @@ do., 10 de abr. de 2022 22:54:04:
  tests:  11|2
 total_score: 50/70
 acd39e9
+do., 10 de abr. de 2022 22:55:08: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+test.c: In function 'enlarge':
+hashmap.c:66:19: error: 'newMap' may be used uninitialized in this function [-Werror=maybe-uninitialized]
+         if (newMap->buckets != NULL && oldBuckets[idx] != NULL){
+             ~~~~~~^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e0e7c6e

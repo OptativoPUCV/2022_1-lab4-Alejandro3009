@@ -60,8 +60,8 @@ void enlarge(HashMap * map) {
     long idx = 0;
     long bigC = map->capacity * 2;
     free(map);
-    newMap = createMap(bigC);
-    newMap->size = 0;
+    map = createMap(bigC);
+    map->size = 0;
     while(oldBuckets[idx] != NULL){
         if (newMap->buckets != NULL && oldBuckets[idx] != NULL){
             insertMap(newMap,oldBuckets[idx]->key,oldBuckets[idx]->value);
