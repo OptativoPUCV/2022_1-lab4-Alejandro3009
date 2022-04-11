@@ -103,3 +103,24 @@ hashmap.c:73:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e2221d1
+do., 10 de abr. de 2022 21:55:50: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:76:45: error: 'return' with a value, in function returning void [-Werror]
+         if(map->buckets[idx] == NULL)return NULL;
+                                             ^~~~
+hashmap.c:73:6: note: declared here
+ void eraseMap(HashMap * map,  char * key) {
+      ^~~~~~~~
+hashmap.c: In function 'searchMap':
+hashmap.c:87:38: error: 'return' with no value, in function returning non-void [-Werror]
+         if(map->buckets[idx] == NULL)return;
+                                      ^~~~~~
+hashmap.c:84:8: note: declared here
+ Pair * searchMap(HashMap * map,  char * key) {
+        ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5bab340
