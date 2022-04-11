@@ -161,3 +161,8 @@ hashmap.c:58:12: error: variable 'oldBuckets' set but not used [-Werror=unused-b
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6d4300b
+do., 10 de abr. de 2022 22:45:37: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  0|0
+2981ab5
