@@ -59,17 +59,13 @@ void enlarge(HashMap * map) {
 
     Pair **oldBuckets = map->buckets;
     long i;
-    long idx = 0;
     long bigC = map->capacity * 2;
-    printf("%li",bigC);
     free(map);
     map = createMap(bigC);
     for(i = 0; i<bigC/2; i++){
-        if (map->buckets != NULL && oldBuckets[idx] != NULL){
-            insertMap(map,oldBuckets[idx]->key,oldBuckets[idx]->value);
-            idx++;
+        if (map->buckets != NULL && oldBuckets[i] != NULL){
+            insertMap(map,oldBuckets[i]->key,oldBuckets[i]->value);
         }
-        else idx++;
     }
 }
 
