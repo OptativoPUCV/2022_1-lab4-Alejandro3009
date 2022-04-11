@@ -59,7 +59,7 @@ void enlarge(HashMap * map) {
     HashMap *newMap;
     long idx = 0;
     long bigC = map->capacity * 2;
-    free(map)
+    free(map);
     newMap = createMap(bigC);
     newMap->size = 0;
     while(oldBuckets[idx] != NULL){
