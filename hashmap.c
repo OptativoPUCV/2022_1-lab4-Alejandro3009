@@ -71,13 +71,18 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
-
+    
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
-
-
+    long idx = hash(key,map->capacity);
+    while (map->buckets[idx]->key != key)
+    {
+        if(map->buckets[idx] == NULL)return NULL;
+        idx = ((idx + 1)%map->capacity);
+    }
+    
+    map->current = idx;
     return NULL;
 }
 
