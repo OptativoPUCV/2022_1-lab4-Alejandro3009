@@ -146,3 +146,18 @@ do., 10 de abr. de 2022 22:06:08:
  tests:  11|2
 total_score: 50/70
 2cd9704
+do., 10 de abr. de 2022 22:37:56: 
+ hashmap.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:63:22: error: 'idx' undeclared (first use in this function)
+     while(oldBuckets[idx] != NULL){
+                      ^~~
+hashmap.c:63:22: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:58:12: error: variable 'oldBuckets' set but not used [-Werror=unused-but-set-variable]
+     Pair **oldBuckets = map->buckets;
+            ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6d4300b
