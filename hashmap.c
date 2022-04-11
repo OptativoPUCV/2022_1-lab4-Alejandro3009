@@ -89,7 +89,7 @@ void eraseMap(HashMap * map,  char * key) {
             esta = 1;
             break;
         }
-        idx = ((idx + 1)%map->capacity);
+        idx++;
     }
 
     if(esta != 1)return;
