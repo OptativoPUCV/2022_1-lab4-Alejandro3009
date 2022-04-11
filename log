@@ -166,3 +166,14 @@ do., 10 de abr. de 2022 22:45:37:
  1 file changed, 2 insertions(+)
  tests:  0|0
 2981ab5
+do., 10 de abr. de 2022 22:47:43: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:65:37: error: 'old_buckets' undeclared (first use in this function)
+         if (map->buckets != NULL && old_buckets[idx] != NULL){
+                                     ^~~~~~~~~~~
+hashmap.c:65:37: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+540fee5
