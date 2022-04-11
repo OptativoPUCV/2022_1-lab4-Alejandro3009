@@ -65,7 +65,7 @@ void enlarge(HashMap * map) {
     map = createMap(bigC);
     for(i = 0; i<bigC/2; i++){
         if (oldBuckets[i] != NULL && map->buckets != NULL){
-            printf("%li",hash(oldBuckets[i]->key,bigC));
+            printf("%li",hash(oldBuckets[i]->key,bigC/2));
             insertMap(map,oldBuckets[i]->key,oldBuckets[i]->value);
         }
     }
