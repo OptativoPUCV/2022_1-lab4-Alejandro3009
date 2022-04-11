@@ -68,11 +68,6 @@ void enlarge(HashMap * map) {
             insertMap(map,oldBuckets[i]->key,oldBuckets[i]->value);
         }
     }
-
-    for (i = 0; i <bigC; i++)
-    {
-        printf("%p ",map->buckets[i]->value);
-    }
 }
 
 
